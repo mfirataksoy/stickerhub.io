@@ -11859,7 +11859,7 @@ html {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-/* .features .content + .content {
+.features .content + .content {
   margin-top: 100px;
 }
 
@@ -11885,7 +11885,7 @@ html {
 
 .features .content p:last-child {
   margin-bottom: 0;
-} */
+}
 
 /*--------------------------------------------------------------
 # Sections General
