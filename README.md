@@ -1,10 +1,8 @@
 # StickerHub (retired)
 
-Archive page for StickerHub, a 2021 project that sent WhatsApp and Telegram stickers through chatbots.
+Farewell page for StickerHub, a 2021 project that sent WhatsApp and Telegram stickers through chatbots.
 Plain HTML/CSS/JS, no build step.
 
-- `data/stickers.json`: curated sticker list (only stickers marked safe, no political ones).
-- `stickers/<id>.webp`: sticker images. Missing images fall back to the sticker's name.
-- `scripts/fetch-stickers.py`: rebuilds both from a Firestore export (needs billing active on the Firebase project to download images).
-
-Preview locally: `python3 -m http.server 5178`
+- `index.html`, `site.css`, `archive.js`: the farewell page.
+- `data/stickers.json`: curated sticker metadata (only stickers marked safe, no political ones). The images were lost with the Firebase project, so the page draws each sticker from its name.
+- `original/`: a build of the 2021 Vue site with Firestore replaced by an in-memory mock (source: branch `archive-mock` of the original app repo). `netlify.toml` routes `/original/*` to its `index.html`.

@@ -1,2 +1,8 @@
 [build]
   publish = "."
+
+# The archived 2021 site is a single-page app served from /original/
+[[redirects]]
+  from = "/original/*"
+  to = "/original/index.html"
+  status = 200
