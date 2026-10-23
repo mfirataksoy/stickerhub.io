@@ -1,116 +1,42 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>StickerHub has retired</title>
-  <meta name="description" content="StickerHub sent WhatsApp and Telegram stickers through chatbots, with no extra app to install. It has retired; this is its archive.">
-  <meta property="og:title" content="StickerHub has retired">
-  <meta property="og:description" content="Stickers over WhatsApp and Telegram chatbots, 2021. Thanks for every sticker you sent.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site.css">
-</head>
-<body>
-  <header class="topbar">
-    <a class="brand" href="#top">stickerhub<span>.io</span></a>
-    <span class="badge">Retired</span>
-  </header>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"><link rel="manifest" href="/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><title>StickerHub has retired</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet"><link href="/css/app.af9f800d.css" rel="preload" as="style"><link href="/css/chunk-vendors.9408bd28.css" rel="preload" as="style"><link href="/js/app.1364efb6.js" rel="preload" as="script"><link href="/js/chunk-vendors.6467c1d3.js" rel="preload" as="script"><link href="/css/chunk-vendors.9408bd28.css" rel="stylesheet"><link href="/css/app.af9f800d.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but my-app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>window.addEventListener('DOMContentLoaded', (event) => {
+        // Navbar shrink function
+        var navbarShrink = function() {
+          const navbarCollapsible = document.body.querySelector('#mainNav');
+          if (!navbarCollapsible) {
+            return;
+          }
+          if (window.scrollY === 0) {
+            navbarCollapsible.classList.remove('navbar-shrink');
+          } else {
+            navbarCollapsible.classList.add('navbar-shrink');
+          }
+        };
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">2021 · WhatsApp &amp; Telegram</p>
-        <h1>StickerHub has retired.</h1>
-        <p class="lede">
-          We built StickerHub so you could share stickers without installing another app.
-          You picked one on the website, messaged our bot, and it sent the sticker right back.
-          Send the bot a sticker of your own, and it showed up on the website for everyone.
-        </p>
-        <p class="thanks">Thanks for every sticker you sent our way. 💚</p>
-        <a class="cta" href="/original/">Visit the original site <span aria-hidden="true">→</span></a>
-      </div>
-      <div class="sticker-pile" id="pile" aria-hidden="true"></div>
-    </section>
+        // Shrink the navbar
+        navbarShrink();
 
-    <ul class="stats" aria-label="StickerHub in numbers">
-      <li><strong>305</strong><span>stickers uploaded by users</span></li>
-      <li><strong>13</strong><span>categories</span></li>
-      <li><strong>2</strong><span>chatbots</span></li>
-      <li><strong>0</strong><span>apps to install</span></li>
-    </ul>
+        // Shrink the navbar when page is scrolled
+        document.addEventListener('scroll', navbarShrink);
 
-    <section class="how" aria-labelledby="how-title">
-      <h2 id="how-title">How it worked</h2>
-      <div class="how-grid">
-        <ol class="steps">
-          <li>
-            <h3>Find a sticker</h3>
-            <p>Browse the site by category or tag, then tap the one you want.</p>
-          </li>
-          <li>
-            <h3>Message the bot</h3>
-            <p>The site opened WhatsApp or Telegram with the message already written. You just hit send.</p>
-          </li>
-          <li>
-            <h3>Get it back as a sticker</h3>
-            <p>The bot replied with the sticker itself, ready to save and forward.</p>
-          </li>
-          <li>
-            <h3>Or give one</h3>
-            <p>Sent the bot a sticker, and it uploaded it to the site. You got a link to name and tag it.</p>
-          </li>
-        </ol>
+        // Activate Bootstrap scrollspy on the main nav element
+        const mainNav = document.body.querySelector('#mainNav');
+        if (mainNav) {
+          new bootstrap.ScrollSpy(document.body, {
+            target: '#mainNav',
+            offset: 72
+          });
+        }
 
-        <figure class="shot">
-          <img src="assets/img/whatsapp.PNG" width="757" height="1416"
-               alt="2021 mockup of a WhatsApp chat with the stickerhub.io bot sending a sticker">
-          <figcaption>Our 2021 mockup of the WhatsApp bot.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="archive" aria-labelledby="archive-title">
-      <div class="archive-head">
-        <h2 id="archive-title">From the archive</h2>
-        <p>The sticker images were lost along with the Firebase project. What's left are the names people gave them, so here they are, redrawn.</p>
-      </div>
-      <div class="chips" id="chips" role="toolbar" aria-label="Filter by category"></div>
-      <ul class="grid" id="grid"></ul>
-    </section>
-
-    <section class="stack" aria-labelledby="stack-title">
-      <h2 id="stack-title">Under the hood</h2>
-      <div class="stack-grid">
-        <div>
-          <h3>Website</h3>
-          <p>Vue 2 and Vuetify, hosted on Netlify. Pages for browsing, tagging and categorizing stickers.</p>
-        </div>
-        <div>
-          <h3>Chatbots</h3>
-          <p>Node.js. The WhatsApp bot drove WhatsApp Web with venom-bot; the Telegram bot used the Bot API.</p>
-        </div>
-        <div>
-          <h3>Storage</h3>
-          <p>Firebase: sticker files in Cloud Storage, names, tags and categories in Firestore.</p>
-        </div>
-      </div>
-      <p class="note">
-        The bots are offline. The <a href="/original/">original site</a> still runs, with the database replaced by a local copy. WhatsApp bots now go through Meta's Business Platform,
-        which needs a verified business number, so a hobby bot like ours has no easy way back.
-      </p>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>Made by <a href="https://mfirataksoy.com">Mehmet Firat Aksoy</a> and <a href="https://github.com/rokasta12">Bedirhan Celayir</a>.</p>
-    <p class="small">
-      Bot source: <a href="https://github.com/mfirataksoy/whatsappchatbot">mfirataksoy/whatsappchatbot</a>.
-      The stickerhub.io domain now belongs to someone else, unrelated to this project.
-    </p>
-  </footer>
-
-  <script src="archive.js" defer></script>
-</body>
-</html>
+        // Collapse responsive navbar when toggler is visible
+        const navbarToggler = document.body.querySelector('.navbar-toggler');
+        const responsiveNavItems = [].slice.call(
+          document.querySelectorAll('#navbarResponsive .nav-link')
+        );
+        responsiveNavItems.map(function(responsiveNavItem) {
+          responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+              navbarToggler.click();
+            }
+          });
+        });
+      });</script><script src="/js/chunk-vendors.6467c1d3.js"></script><script src="/js/app.1364efb6.js"></script></body></html>

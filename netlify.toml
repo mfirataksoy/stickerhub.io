@@ -1,8 +1,14 @@
 [build]
   publish = "."
 
-# The archived 2021 site is a single-page app served from /original/
+# The farewell page used to live at /, with the 2021 site under /original/.
 [[redirects]]
   from = "/original/*"
-  to = "/original/index.html"
+  to = "/:splat"
+  status = 301
+
+# The site is a single-page app (Vue Router history mode).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
   status = 200
