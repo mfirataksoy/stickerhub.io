@@ -1,4 +1,4 @@
-@charset "UTF-8";header.v-app-bar{z-index:5;margin-top:34px}@media (min-width:992px){#mainNav .nav-link{padding-left:.75rem!important;padding-right:.75rem!important;white-space:nowrap}}.footer-credits a{color:#fff!important;font-weight:700}
+@charset "UTF-8";.lang-switch{display:flex;border:2px solid hsla(0,0%,100%,.7);border-radius:999px;padding:2px}.lang-switch__option{color:#fff;font-weight:700;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;padding:.2rem .6rem;border-radius:999px}.lang-switch__option[aria-pressed=true]{background:#fff;color:#1abc9c}.lang-switch__option:focus-visible{outline:2px solid #fff;outline-offset:2px}header.v-app-bar{z-index:5;margin-top:34px}@media (min-width:992px){#mainNav .nav-link{padding-left:.75rem!important;padding-right:.75rem!important;white-space:nowrap}}.footer-credits a{color:#fff!important;font-weight:700}
 /*!
 * Start Bootstrap - Freelancer v7.0.4 (https://startbootstrap.com/theme/freelancer)
 * Copyright 2013-2021 Start Bootstrap
