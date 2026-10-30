@@ -10,3 +10,5 @@ This is a build output. The source is branch `archive-mock` of the original app 
     NODE_OPTIONS=--openssl-legacy-provider npx vue-cli-service build
 
 `netlify.toml` serves it as a single-page app and redirects the old `/original/*` paths.
+
+`index.html` also loads Fırat's AI chat widget from mfirataksoy.com (`data-site="stickerhub"`). Add that script tag again after a rebuild.
