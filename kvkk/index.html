@@ -40,14 +40,18 @@ footer { color: var(--muted); font-size: 13px; padding-top: 2rem; padding-bottom
 
 <section lang="tr" id="tr">
 <h1>Kişisel Verilerin Korunması Aydınlatma Metni</h1>
-<p class="meta">StickerHub · Son güncelleme: 30 Ekim 2026</p>
+<p class="meta">StickerHub · Son güncelleme: 1 Kasım 2026</p>
 <p>Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun ("KVKK") 10. maddesi uyarınca StickerHub ("Site") ziyaretçilerini bilgilendirmek amacıyla hazırlanmıştır.</p>
 <h2>1. Veri sorumlusu</h2>
 <p>Veri sorumlusu, gerçek kişi Mehmet Fırat Aksoy'dur (İstanbul). İletişim: <a href="mailto:mehmetfirataksoy@gmail.com">mehmetfirataksoy@gmail.com</a><br>Site, ticari amaç taşımayan kişisel bir portfolyo projesidir.</p>
 <h2>2. İşlenen veriler, amaçlar ve hukuki sebepler</h2>
-<p class="notice">StickerHub 2021'de emekliye ayrılmıştır; bu site salt okunur bir arşivdir ve veri toplamaz.</p>
+<p class="notice">StickerHub 2021'de emekliye ayrılmıştır; bu site salt okunur bir arşivdir; hesap veya sticker yükleme yoktur.</p>
 <div class="table"><table><tr><th>Veri</th><th>Amaç</th><th>Hukuki sebep</th></tr>
 <tr><td>Sunucu kayıtları: IP adresi, tarih-saat, istenen sayfa, tarayıcı bilgisi</td><td>Site'yi yayında ve güvende tutmak, kötüye kullanımı önlemek</td><td>5/2-f</td></tr>
+<tr><td>Kullanım istatistikleri: görüntülenen sayfalar, tıklamalar ve Site içi olaylar (ör. kategori açma), tarayıcı ve cihaz türü, IP adresinden çıkarılan yaklaşık konum. Cihazınızda kimlik saklanmaz, geri gelen ziyaretçiler tanınmaz, ekran kaydı yapılmaz; adınız, e-postanız veya yazdığınız metinler gönderilmez.</td><td>Site'nin nasıl kullanıldığını anlamak ve geliştirmek</td><td>5/2-f</td></tr>
+<tr><td>Sohbet asistanına yazdığınız mesajlar ve hangi sayfada yazdığınız</td><td>Sorularınızı yapay zekâ asistanıyla yanıtlamak; sohbetler site sahibi tarafından okunabilir</td><td>5/2-f</td></tr>
+<tr><td>Asistan aracılığıyla bıraktığınız ad, e-posta ve mesaj</td><td>Size dönüş yapmak</td><td>5/2-f</td></tr>
+<tr><td>IP adresinizden türetilen, geri döndürülemeyen bir özet (hash)</td><td>Kötüye kullanımı ve spam'i sınırlamak</td><td>5/2-f</td></tr>
 </table></div>
 <p class="small"><strong>5/2-f</strong>: veri sorumlusunun meşru menfaati (KVKK md. 5/2).</p>
 <h2>3. Toplama yöntemi</h2>
@@ -56,13 +60,17 @@ footer { color: var(--muted); font-size: 13px; padding-top: 2rem; padding-bottom
 <p>Kişisel verileriniz satılmaz ve reklam amacıyla kimseyle paylaşılmaz. Veriler yalnızca Site'nin çalışması için gereken aşağıdaki hizmet sağlayıcılarla paylaşılır. Kanunen yetkili kamu kurum ve kuruluşlarının talebi olursa ilgili mevzuat çerçevesinde onlarla da paylaşılabilir (KVKK md. 8 ve 5/2-ç).</p>
 <ul>
 <li>Netlify, Inc. (barındırma; ABD)</li>
+<li>PostHog Inc. (kullanım istatistikleri; ABD)</li>
+<li>Anthropic PBC (sohbet asistanının yapay zekâ modeli; ABD)</li>
+<li>Netlify, Inc. (sohbet ve iletişim mesajlarının kaydı, mfirataksoy.com üzerinden; ABD)</li>
+<li>Resend (iletişim mesajlarının site sahibine e-postayla bildirilmesi; ABD)</li>
 </ul>
 <h2>5. Yurt dışına aktarım</h2>
 <p>Yukarıdaki sağlayıcıların sunucuları Türkiye dışındadır (ABD ve/veya Avrupa Birliği). Bu nedenle verileriniz KVKK'nın 9. maddesi kapsamında yurt dışına aktarılmaktadır. Aktarımda sağlayıcıların kendi veri işleme sözleşmeleri ve güvenlik önlemleri uygulanır.</p>
 <h2>6. Saklama süresi</h2>
-<p>Sunucu kayıtları, barındırma sağlayıcısının kendi süresince (genellikle birkaç gün ile birkaç hafta) saklanır.</p>
+<p>Sunucu kayıtları, barındırma sağlayıcısının kendi süresince (genellikle birkaç gün ile birkaç hafta) saklanır. Sohbet ve iletişim mesajları iletişim amacı sürdükçe saklanır; silinmesini istediğinizde silinir. Kullanım istatistikleri PostHog hesabının saklama süresince tutulur.</p>
 <h2>7. Çerezler ve benzeri teknolojiler</h2>
-<p>Site çerez (cookie) kullanmaz. <code>localStorage</code> içinde dil seçiminiz tutulur.</p>
+<p>Site çerez (cookie) kullanmaz. <code>localStorage</code> içinde dil seçiminiz tutulur. Sohbet asistanı açık sohbetinizi <code>sessionStorage</code> içinde tutar; sekmeyi kapatınca silinir. Adres çubuğunda sayfa adresinin sonuna <code>?notrack</code> eklerseniz kullanım istatistikleri bu tarayıcıda kapanır ve bu tercih <code>localStorage</code> içinde hatırlanır (<code>?track</code> geri açar).</p>
 <p>Bunlar yalnızca sizin seçtiğiniz bir hizmeti sunmak için gereklidir, cihazınızdan Site sahibine gönderilmez ve reklam ya da takip amacıyla kullanılmaz. Tarayıcınızın site verilerini temizleyerek hepsini silebilirsiniz.</p>
 <h2>8. Haklarınız (KVKK md. 11)</h2>
 <p>Veri sorumlusuna başvurarak şunları yapabilirsiniz:</p>
@@ -83,14 +91,18 @@ footer { color: var(--muted); font-size: 13px; padding-top: 2rem; padding-bottom
 
 <section lang="en" id="en">
 <h1>Privacy Notice</h1>
-<p class="meta">StickerHub · Last updated: 30 October 2026</p>
+<p class="meta">StickerHub · Last updated: 1 November 2026</p>
 <p>This notice informs visitors of StickerHub (the "Site") under Article 10 of the Turkish Personal Data Protection Law No. 6698 ("KVKK"). The Turkish version above prevails.</p>
 <h2>1. Data controller</h2>
 <p>The data controller is Mehmet Fırat Aksoy, a private individual in Istanbul. Contact: <a href="mailto:mehmetfirataksoy@gmail.com">mehmetfirataksoy@gmail.com</a><br>The Site is a non-commercial personal portfolio project.</p>
 <h2>2. Data processed, purposes and legal bases</h2>
-<p class="notice">StickerHub retired in 2021; this site is a read-only archive and collects no data.</p>
+<p class="notice">StickerHub retired in 2021; this site is a read-only archive with no accounts or uploads.</p>
 <div class="table"><table><tr><th>Data</th><th>Purpose</th><th>Legal basis</th></tr>
 <tr><td>Server logs: IP address, date and time, page requested, browser details</td><td>Keeping the Site online and secure, preventing abuse</td><td>5/2-f</td></tr>
+<tr><td>Usage statistics: pages viewed, clicks and in-site events (e.g. opening a category), browser and device type, approximate location derived from the IP address. No identifier is stored on your device, returning visitors are not recognised, no screen recording is made; your name, email or typed text are not sent.</td><td>Understanding how the Site is used and improving it</td><td>5/2-f</td></tr>
+<tr><td>Messages you write to the chat assistant and the page you wrote them on</td><td>Answering your questions with an AI assistant; the site owner can read the chats</td><td>5/2-f</td></tr>
+<tr><td>Name, email and message you leave through the assistant</td><td>Getting back to you</td><td>5/2-f</td></tr>
+<tr><td>A one-way digest (hash) derived from your IP address</td><td>Limiting abuse and spam</td><td>5/2-f</td></tr>
 </table></div>
 <p class="small"><strong>5/2-f</strong>: the controller's legitimate interest (KVKK art. 5/2).</p>
 <h2>3. How data is collected</h2>
@@ -99,13 +111,17 @@ footer { color: var(--muted); font-size: 13px; padding-top: 2rem; padding-bottom
 <p>Your personal data is never sold or shared for advertising. It is shared only with the service providers below, which the Site needs in order to work, and with public authorities when they are legally entitled to request it (KVKK art. 8 and 5/2-ç).</p>
 <ul>
 <li>Netlify, Inc. (hosting; USA)</li>
+<li>PostHog Inc. (usage statistics; USA)</li>
+<li>Anthropic PBC (the chat assistant's AI model; USA)</li>
+<li>Netlify, Inc. (storing chat and contact messages, via mfirataksoy.com; USA)</li>
+<li>Resend (emailing contact messages to the site owner; USA)</li>
 </ul>
 <h2>5. Transfers abroad</h2>
 <p>The servers of these providers are outside Turkey (USA and/or the European Union), so your data is transferred abroad within the scope of KVKK Article 9. The providers' own data processing agreements and security measures apply.</p>
 <h2>6. Retention</h2>
-<p>Server logs are kept for the hosting provider's own period (usually a few days to a few weeks).</p>
+<p>Server logs are kept for the hosting provider's own period (usually a few days to a few weeks). Chat and contact messages are kept while the contact purpose lasts, and deleted when you ask. Usage statistics are kept for the PostHog account's retention period.</p>
 <h2>7. Cookies and similar technologies</h2>
-<p>The Site uses no cookies. <code>localStorage</code> keeps your language choice.</p>
+<p>The Site uses no cookies. <code>localStorage</code> keeps your language choice. The chat assistant keeps your open chat in <code>sessionStorage</code>, which is cleared when you close the tab. Adding <code>?notrack</code> to a page address turns usage statistics off in this browser, and that choice is remembered in <code>localStorage</code> (<code>?track</code> turns them back on).</p>
 <p>These are needed only to provide a feature you chose; they are not sent from your device to the Site owner and are not used for advertising or tracking. Clearing your browser's site data removes them all.</p>
 <h2>8. Your rights (KVKK art. 11)</h2>
 <p>By contacting the data controller you can:</p>

@@ -40,8 +40,11 @@
       api_host: POSTHOG_HOST,
       // SPA pageviews on history changes (Vue Router history mode) and autocapture.
       defaults: '2026-01-30',
-      // No cookies; returning visitors are recognised through localStorage.
-      persistence: 'localStorage',
+      // Cookieless (KVKK): nothing is stored on the device, returning visitors
+      // are not recognised, and session replay stays off.
+      cookieless_mode: 'always',
+      persistence: 'memory',
+      disable_session_recording: true,
     });
     window.posthog.register({ site: 'StickerHub' });
   }
