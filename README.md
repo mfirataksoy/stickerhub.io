@@ -9,7 +9,7 @@ This is a build output. The source is branch `archive-mock` of the original app 
     npm install --legacy-peer-deps
     NODE_OPTIONS=--openssl-legacy-provider npx vue-cli-service build
 
-`netlify.toml` serves it as a single-page app and redirects the old `/original/*` paths.
+It is hosted on Cloudflare Pages (project `stickerhub`, no build step, output directory `/`). Pages serves it as a single-page app on its own, and `_redirects` sends the old `/original/*` paths to the new ones. `netlify.toml` does the same for the old Netlify site and goes away once that site is retired.
 
 `index.html` also loads Fırat's AI chat widget from mfirataksoy.com (`data-site="stickerhub"`). Add that script tag again after a rebuild.
 

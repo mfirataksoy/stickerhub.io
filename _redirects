@@ -1,0 +1,3 @@
+# Cloudflare Pages. The farewell page used to live at /, with the 2021 site under /original/.
+/original/* /:splat 301
+# No 404.html here, so Pages already serves index.html for unknown paths (Vue Router history mode).
