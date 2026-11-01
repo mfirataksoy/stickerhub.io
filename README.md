@@ -12,3 +12,5 @@ This is a build output. The source is branch `archive-mock` of the original app 
 `netlify.toml` serves it as a single-page app and redirects the old `/original/*` paths.
 
 `index.html` also loads Fırat's AI chat widget from mfirataksoy.com (`data-site="stickerhub"`). Add that script tag again after a rebuild.
+
+`index.html` also loads `js/analytics.js` (PostHog, hand-written, not part of the build; off on localhost and with `?notrack`). Add that script tag again after a rebuild.
