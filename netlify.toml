@@ -1,6 +1,13 @@
 [build]
   publish = "."
 
+# The site moved to stickerhub.mfirataksoy.com; send the old Netlify address there.
+[[redirects]]
+  from = "https://stickerhubio.netlify.app/*"
+  to = "https://stickerhub.mfirataksoy.com/:splat"
+  status = 301
+  force = true
+
 # The farewell page used to live at /, with the 2021 site under /original/.
 [[redirects]]
   from = "/original/*"
